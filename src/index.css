@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a1833; /* Changed to dark blue */
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  animation: thunderBackground 10s infinite;
+}
+
+@keyframes thunderBackground {
+  0%, 100% {
+    background-color: #0a1833; /* Dark blue */
+  }
+  10% {
+    background-color: #142c54; /* Slightly lighter dark blue */
+  }
+  20% {
+    background-color: #0a1833;
+  }
+  30% {
+    background-color: #142c54;
+  }
+  40% {
+    background-color: #0a1833;
+  }
+  70% {
+    background-color: #142c54;
+  }
+  80% {
+    background-color: #0a1833;
+  }
+}
+
+/* Add optional lightning flash overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  animation: lightningFlash 10s infinite;
+}
+
+@keyframes lightningFlash {
+  0%, 97%, 100% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.8;
+  }
+  99% {
+    opacity: 0.3;
+  }
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  max-width: 220px; /* Made smaller */
+  width: 60%;       /* Made smaller */
+  height: auto;
+  border-radius: 12px; /* Optional: rounded corners */
+  box-shadow: 0 4px 24px rgba(0, 247, 255, 0.2); /* Optional: subtle glow */
+}

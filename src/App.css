@@ -1,0 +1,16 @@
+.JABAJA, .sayu, .pahintulot, .bawat {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00f7ff;
+  box-shadow: 0 0 20px #00f7ff;
+  transition: transform 0.3s ease;
+}
+
+.JABAJA:hover, .sayu:hover, .pahintulot:hover, .bawat:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #00f7ff, 0 0 40px #00f7ff;
+}
+
+.head, .ghost-description, .sayo-des, .pahintulot-des, .bawat-des {
+  color: #eee;
+  text-shadow: 0 0 5px #0ff;
+}
